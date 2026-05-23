@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Protocolos de Correo Electronico — ConcienciaIA</title>
+  <meta name="description" content="Normas de comunicacion profesional por correo electronico, manejo seguro de informacion sensible, etiqueta digital y prevencion de vulnerabilidades en la bandeja de entrada.">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+  <div id="progress-bar"></div>
+
+  <nav class="site-nav" role="navigation" aria-label="Navegacion principal">
+    <div class="nav-inner">
+      <a href="../index.html" class="nav-logo" aria-label="Inicio ConcienciaIA">
+        <div class="nav-logo__mark">
+          <svg viewBox="0 0 20 20" aria-hidden="true">
+            <circle cx="10" cy="10" r="7" stroke-width="1.5" fill="none" stroke="white"/>
+            <path d="M10 6v4l3 2" stroke-width="1.5" stroke-linecap="round" stroke="white" fill="none"/>
+          </svg>
+        </div>
+        <div class="nav-logo__text">ConcienciaIA<span>Educacion Responsable</span></div>
+      </a>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="principios-eticos.html">Principios Eticos</a></li>
+        <li><a href="etica-informatica.html">Etica Informatica</a></li>
+        <li><a href="protocolos-correo.html" class="active">Protocolos de Correo</a></li>
+        <li><a href="buenas-practicas-software.html">Desarrollo de Software</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main class="page-content">
+    <header class="page-hero">
+      <div class="page-hero__inner main-container">
+        <nav class="page-hero__breadcrumb" aria-label="Ruta de navegacion">
+          <a href="../index.html">Inicio</a>
+          <span class="sep">/</span>
+          <span>Protocolos de Correo</span>
+        </nav>
+        <span class="page-hero__label">Modulo 03</span>
+        <h1 class="page-hero__title">Protocolos de Correo Electronico y Comunicacion Segura</h1>
+        <p class="page-hero__desc">
+          La bandeja de entrada es la puerta de entrada mas comun para ciberataques
+          y filtraciones de informacion. Conocer sus protocolos, normas eticas y
+          mecanismos de seguridad es una competencia critica en el entorno digital.
+        </p>
+      </div>
+    </header>
+
+    <div class="main-container">
+      <div class="page-layout">
+
+        <!-- CONTENIDO PRINCIPAL -->
+        <article>
+          <div class="article-meta">
+            <span class="article-meta__tag">Comunicacion</span>
+            <span class="article-meta__tag">Ciberseguridad</span>
+            <span class="article-meta__tag">Etica Digital</span>
+            <span class="article-meta__read">Lectura estimada: 11 minutos</span>
+          </div>
+
+          <div class="prose">
+
+            <h2 id="importancia">Por que el correo electronico sigue siendo critico</h2>
+            <p>
+              Pese al auge de herramientas de mensajeria instantanea y colaboracion en la nube,
+              el correo electronico sigue siendo el canal de comunicacion profesional dominante.
+              Tambien es, con diferencia, el vector de ataque mas explotado por actores
+              maliciosos: mas del 90 % de los ciberataques exitosos comienzan con un correo
+              de phishing. En organizaciones que desarrollan o despliegan sistemas de IA,
+              la bandeja de entrada puede contener acceso a modelos, datos de entrenamiento
+              sensibles y credenciales de infraestructura critica.
+            </p>
+            <p>
+              Conocer los protocolos tecnicos que sustentan el correo, las normas de
+              comunicacion etica y las practicas de seguridad no es solo una cuestion
+              de productividad: es una responsabilidad profesional y organizacional.
+            </p>
+
+            <div class="callout callout--danger">
+              <div class="callout__title">Dato clave</div>
+              <p>Segun el Informe de Investigacion de Violaciones de Datos de Verizon (2023),
+              el phishing es el vector inicial en el 36% de todas las violaciones de datos
+              documentadas a nivel global. La ingenieria social supera en efectividad a los
+              ataques tecnicos en la mayoria de incidentes.</p>
+            </div>
+
+            <h2 id="protocolos-tecnicos">Protocolos tecnicos del correo electronico</h2>
+            <p>
+              Entender los protocolos que mueven el correo electronico es fundamental para
+              comprender por que existen ciertos riesgos y como mitigarlos. El correo no
+              fue disenado con seguridad en mente: el protocolo SMTP original de 1982 envia
+              mensajes en texto plano, sin autenticacion ni cifrado.
+            </p>
+
+          </div>
+
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Protocolo</th>
+                  <th>Funcion</th>
+                  <th>Puerto seguro</th>
+                  <th>Estado actual</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>SMTP</strong></td>
+                  <td>Envio de correos entre servidores</td>
+                  <td>465 / 587 (TLS)</td>
+                  <td>Usar siempre con TLS obligatorio</td>
+                </tr>
+                <tr>
+                  <td><strong>IMAP</strong></td>
+                  <td>Acceso remoto a la bandeja (sincronizado)</td>
+                  <td>993 (IMAPS)</td>
+                  <td>Preferido sobre POP3 para multidispositivo</td>
+                </tr>
+                <tr>
+                  <td><strong>POP3</strong></td>
+                  <td>Descarga de correos al dispositivo</td>
+                  <td>995 (POP3S)</td>
+                  <td>Uso en declive; evitar sin TLS</td>
+                </tr>
+                <tr>
+                  <td><strong>SPF</strong></td>
+                  <td>Verifica que el servidor de envio esta autorizado</td>
+                  <td>DNS (registro TXT)</td>
+                  <td>Obligatorio para evitar spoofing</td>
+                </tr>
+                <tr>
+                  <td><strong>DKIM</strong></td>
+                  <td>Firma criptografica del mensaje saliente</td>
+                  <td>DNS (registro TXT)</td>
+                  <td>Obligatorio para autenticidad</td>
+                </tr>
+                <tr>
+                  <td><strong>DMARC</strong></td>
+                  <td>Politica de gestion de fallos de SPF/DKIM</td>
+                  <td>DNS (registro TXT)</td>
+                  <td>Critico para proteger el dominio corporativo</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="prose">
+
+            <h2 id="etica-comunicacion">Etica en la comunicacion por correo</h2>
+            <p>
+              El correo electronico profesional es un documento formal con implicaciones
+              legales. Un correo puede ser requerido como prueba en un litigio, puede contener
+              compromisos contractuales y puede exponer informacion confidencial si se
+              envia a un destinatario equivocado. La etica de la comunicacion digital
+              empieza por tratar cada correo con el mismo cuidado que un documento firmado.
+            </p>
+
+            <h3 id="buenas-practicas-envio">Buenas practicas de envio</h3>
+          </div>
+
+          <!-- CHECKLIST -->
+          <ul class="checklist" style="margin: 1.5rem 0 2.5rem;">
+            <li>Verificar siempre el destinatario antes de enviar, especialmente al responder o reenviar cadenas largas.</li>
+            <li>Usar CCO (copia oculta) al enviar comunicaciones masivas para proteger las direcciones de los destinatarios.</li>
+            <li>No incluir informacion confidencial (credenciales, datos personales, documentos sensibles) en el cuerpo del correo sin cifrado.</li>
+            <li>Responder en un plazo razonable (generalmente 24-48 horas en contextos laborales) para respetar el tiempo del interlocutor.</li>
+            <li>Usar asuntos descriptivos que permitan identificar el correo sin abrirlo: evitar "Consulta" o "Urgente" sin contexto.</li>
+            <li>No enviar comunicaciones laborales criticas fuera de horario laboral, salvo emergencia real, para respetar la desconexion digital.</li>
+            <li>Firmar los correos con nombre, cargo y datos de contacto para garantizar autenticidad e identificacion.</li>
+            <li>Archivar o etiquetar correos con informacion relevante segun la politica de retencion documental de la organizacion.</li>
+          </ul>
+
+          <div class="prose">
+
+            <h2 id="phishing">Identificacion y prevencion de phishing</h2>
+            <p>
+              El phishing es un ataque de ingenieria social que utiliza correos electronicos
+              fraudulentos para engañar a sus victimas y obtener credenciales, datos personales
+              o acceso a sistemas. Los ataques de phishing modernos son sofisticados: pueden
+              suplantar perfectamente la identidad visual de bancos, proveedores de software
+              o incluso de companeros de trabajo (spear phishing).
+            </p>
+            <p>
+              En entornos de desarrollo de IA, el spear phishing es especialmente peligroso:
+              un atacante puede intentar obtener credenciales de acceso a plataformas de
+              entrenamiento de modelos, repositorios de datos o APIs de modelos en produccion.
+            </p>
+
+            <h3 id="senales-alerta">Senales de alerta en un correo sospechoso</h3>
+
+          </div>
+
+          <div class="cards-grid cards-grid--2" style="margin: 1.5rem 0 2.5rem;">
+            <div class="card">
+              <div class="card__tag card__tag--red">Tecnicas</div>
+              <h3>Senales tecnicas</h3>
+              <p>Dominio del remitente ligeramente diferente al oficial (google-support.net vs google.com). Cabeceras de correo que no coinciden con el dominio visible. Falta de firma DKIM valida. URLs que difieren del texto del enlace al pasar el cursor.</p>
+            </div>
+            <div class="card">
+              <div class="card__tag card__tag--amber">Contenido</div>
+              <h3>Senales de contenido</h3>
+              <p>Urgencia artificial: "Tu cuenta sera suspendida en 24 horas". Solicitud de credenciales o datos de pago fuera de canales normales. Archivos adjuntos inesperados, especialmente con macros o ejecutables. Saludo generico sin nombre ("Estimado cliente").</p>
+            </div>
+          </div>
+
+          <div class="prose">
+
+            <h2 id="cifrado">Cifrado y privacidad del correo</h2>
+            <p>
+              El cifrado del correo electronico es la unica garantia real de confidencialidad
+              en el transito de mensajes. Existen dos aproximaciones principales que el
+              profesional informatico debe conocer:
+            </p>
+
+            <h3>Cifrado en transito (TLS)</h3>
+            <p>
+              El protocolo TLS (Transport Layer Security) cifra la conexion entre servidores
+              de correo. Garantiza que el mensaje no pueda ser interceptado mientras viaja
+              por la red, pero los servidores en los extremos pueden leerlo. Es el estandar
+              minimo que cualquier servidor de correo moderno debe implementar.
+            </p>
+
+            <h3>Cifrado de extremo a extremo (S/MIME y PGP)</h3>
+            <p>
+              S/MIME y PGP/GPG proporcionan cifrado extremo a extremo: solo el destinatario
+              con la clave privada correcta puede descifrar el mensaje. Son la opcion adecuada
+              para comunicaciones con informacion altamente sensible: datos de salud, secretos
+              comerciales, credenciales de infraestructura o comunicaciones legales.
+            </p>
+
+            <div class="callout callout--info">
+              <div class="callout__title">Para tener en cuenta</div>
+              <p>El uso del correo electronico corporativo para actividades personales crea
+              riesgos eticos y legales adicionales: la organizacion puede tener acceso legal
+              a todos los correos enviados desde su dominio. Es una practica que debe evitarse
+              y que los empleados deben conocer antes de usar su correo de empresa.</p>
+            </div>
+
+            <h2 id="ia-correo">Correo electronico e inteligencia artificial</h2>
+            <p>
+              Las herramientas de IA aplicadas al correo —desde los filtros de spam hasta
+              los asistentes de redaccion— plantean nuevas preguntas eticas. Cuando un
+              asistente de IA lee tus correos para sugerir respuestas, tu organizacion
+              y la empresa del asistente tienen acceso a esa informacion. Las implicaciones
+              para la confidencialidad son significativas.
+            </p>
+            <p>
+              Ademas, los ataques de phishing generados con IA son mucho mas convincentes
+              que los tradicionales: pueden personalizar el tono, imitar el estilo de escritura
+              de conocidos y adaptar el contenido al contexto especifico del destinatario.
+              La formacion en identificacion de phishing debe actualizarse continuamente
+              para incluir estas nuevas capacidades.
+            </p>
+
+            <blockquote>
+              <p>
+                "En la comunicacion digital, la responsabilidad no termina cuando presionas
+                enviar. Empieza por las decisiones que tomas antes de escribir el primer caracter."
+              </p>
+            </blockquote>
+
+          </div>
+        </article>
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar" aria-label="Navegacion del modulo">
+          <nav class="sidebar-toc" aria-label="Contenido de este modulo">
+            <div class="sidebar-toc__title">En esta pagina</div>
+            <ol>
+              <li><a href="#importancia">Por que es critico</a></li>
+              <li><a href="#protocolos-tecnicos">Protocolos tecnicos</a></li>
+              <li><a href="#etica-comunicacion">Etica en la comunicacion</a></li>
+              <li><a href="#buenas-practicas-envio">Buenas practicas de envio</a></li>
+              <li><a href="#phishing">Identificacion de phishing</a></li>
+              <li><a href="#senales-alerta">Senales de alerta</a></li>
+              <li><a href="#cifrado">Cifrado y privacidad</a></li>
+              <li><a href="#ia-correo">IA y correo electronico</a></li>
+            </ol>
+          </nav>
+          <nav class="sidebar-nav" aria-label="Otros modulos">
+            <div class="sidebar-nav__title">Modulos del curso</div>
+            <ul>
+              <li><a href="principios-eticos.html">Principios Eticos</a></li>
+              <li><a href="etica-informatica.html">Etica Informatica</a></li>
+              <li><a href="protocolos-correo.html" class="current">Protocolos de Correo</a></li>
+              <li><a href="buenas-practicas-software.html">Desarrollo de Software</a></li>
+            </ul>
+          </nav>
+        </aside>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="nav-logo" aria-label="Inicio">
+            <div class="nav-logo__mark">
+              <svg viewBox="0 0 20 20" aria-hidden="true">
+                <circle cx="10" cy="10" r="7" stroke-width="1.5" fill="none" stroke="white"/>
+                <path d="M10 6v4l3 2" stroke-width="1.5" stroke-linecap="round" stroke="white" fill="none"/>
+              </svg>
+            </div>
+            <div class="nav-logo__text">ConcienciaIA<span>Educacion Responsable</span></div>
+          </a>
+          <p>Plataforma educativa sobre el uso responsable de la inteligencia artificial. Contenido de libre uso con fines academicos.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Modulos</h5>
+          <ul>
+            <li><a href="principios-eticos.html">Principios Eticos</a></li>
+            <li><a href="etica-informatica.html">Etica Informatica</a></li>
+            <li><a href="protocolos-correo.html">Protocolos de Correo</a></li>
+            <li><a href="buenas-practicas-software.html">Desarrollo de Software</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Recursos</h5>
+          <ul>
+            <li><a href="https://www.acm.org/code-of-ethics" target="_blank" rel="noopener">ACM Codigo de Etica</a></li>
+            <li><a href="https://ainowInstitute.org" target="_blank" rel="noopener">AI Now Institute</a></li>
+            <li><a href="https://partnershiponai.org" target="_blank" rel="noopener">Partnership on AI</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Navegacion</h5>
+          <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../index.html#modulos">Todos los modulos</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>ConcienciaIA — Contenido educativo de libre uso</span>
+        <span>Sin derechos de autor — Libre distribucion con fines educativos</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conciencia IA — Educacion para el uso responsable de la inteligencia artificial</title>
+  <meta name="description" content="Plataforma educativa sobre el uso responsable de la inteligencia artificial: principios eticos, etica informatica, protocolos de comunicacion y buenas practicas de desarrollo.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <div id="progress-bar"></div>
+
+  <!-- NAVEGACION -->
+  <nav class="site-nav" role="navigation" aria-label="Navegacion principal">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Inicio Conciencia IA">
+        <div class="nav-logo__mark">
+          <svg viewBox="0 0 20 20" aria-hidden="true">
+            <circle cx="10" cy="10" r="7" stroke-width="1.5"/>
+            <path d="M10 6v4l3 2" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="nav-logo__text">
+          ConcienciaIA
+          <span>Educacion Responsable</span>
+        </div>
+      </a>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html" class="active">Inicio</a></li>
+        <li><a href="pages/principios-eticos.html">Principios Eticos</a></li>
+        <li><a href="pages/etica-informatica.html">Etica Informatica</a></li>
+        <li><a href="pages/protocolos-correo.html">Protocolos de Correo</a></li>
+        <li><a href="pages/buenas-practicas-software.html">Desarrollo de Software</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main class="page-content">
+
+    <!-- HERO -->
+    <section class="hero" aria-label="Presentacion">
+      <div class="hero__bg-grid" aria-hidden="true"></div>
+      <div class="hero__bg-gradient" aria-hidden="true"></div>
+      <div class="hero__inner main-container">
+        <div class="hero__text">
+          <p class="hero__label">Plataforma educativa</p>
+          <h1 class="hero__title">
+            La <em>inteligencia</em><br>
+            sin consciencia<br>
+            no es progreso.
+          </h1>
+          <p class="hero__desc">
+            La inteligencia artificial transforma todos los sectores de la sociedad.
+            Entender sus riesgos, sus principios eticos y sus buenas practicas de uso
+            es una responsabilidad de toda persona que trabaja con tecnologia.
+          </p>
+          <div class="hero__actions">
+            <a href="#modulos" class="btn btn--primary">Explorar modulos</a>
+            <a href="pages/principios-eticos.html" class="btn btn--outline">Comenzar a aprender</a>
+          </div>
+        </div>
+        <aside class="hero__stats" aria-label="Datos sobre el impacto de la IA">
+          <div class="stat-card">
+            <div class="stat-card__value">
+              <span data-target="85" data-suffix="%">0%</span>
+            </div>
+            <div class="stat-card__label">de los deepfakes producidos son contenido no consensuado</div>
+            <div class="stat-card__source">Deeptrace Labs, 2023</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-card__value">
+              <span data-target="40" data-suffix="%">0%</span>
+            </div>
+            <div class="stat-card__label">de empleos en riesgo de automatizacion parcial en la proxima decada</div>
+            <div class="stat-card__source">McKinsey Global Institute, 2023</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-card__value">
+              <span data-target="92" data-suffix="%">0%</span>
+            </div>
+            <div class="stat-card__label">de los sistemas de IA biometricos presentan algun sesgo documentado</div>
+            <div class="stat-card__source">MIT Media Lab, 2022</div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ALERTA -->
+    <div class="alert-strip" role="note">
+      <div class="alert-strip__inner main-container">
+        <span class="alert-strip__label">Aviso educativo</span>
+        <p>Este sitio no tiene fines comerciales. El contenido es de libre uso con propositos academicos y de conciencia ciudadana. Todos los datos provienen de fuentes publicas verificables.</p>
+      </div>
+    </div>
+
+    <!-- INTRO -->
+    <section class="intro-section" aria-labelledby="intro-heading">
+      <div class="main-container">
+        <div class="intro-grid">
+          <div class="intro-text">
+            <div class="section-label">Por que importa esto</div>
+            <h2 id="intro-heading">El acceso sin preparacion es el principal riesgo</h2>
+            <p>
+              Las herramientas de inteligencia artificial estan disponibles para cualquier persona
+              con acceso a internet. Sin embargo, la mayoria de usuarios —incluidos muchos
+              profesionales del sector— desconocen los principios eticos que deben guiar su uso,
+              los riesgos reales de una adopcion irresponsable y las buenas practicas que minimizan
+              el dano a individuos y organizaciones.
+            </p>
+            <p>
+              Esta plataforma aborda cuatro dimensiones fundamentales: los principios eticos
+              que deben regir la IA, la etica en el campo de la informatica, los protocolos
+              de comunicacion digital y las buenas practicas en el desarrollo de software.
+            </p>
+            <a href="pages/etica-informatica.html" class="btn btn--primary" style="margin-top:1.5rem;">Leer sobre etica informatica</a>
+          </div>
+          <div class="intro-visual" aria-hidden="true">
+            <div class="terminal">
+              <div class="terminal__header">
+                <span class="terminal__dot"></span>
+                <span class="terminal__dot"></span>
+                <span class="terminal__dot"></span>
+                <span class="terminal__title">ia-evaluacion.sh</span>
+              </div>
+              <div class="terminal__line">
+                <span class="prompt">$ </span>
+                <span class="cmd">evaluar_sistema --modelo produccion</span>
+              </div>
+              <div class="terminal__line">
+                <span class="out">[INFO] Auditando sesgos en datos de entrenamiento...</span>
+              </div>
+              <div class="terminal__line">
+                <span class="warn">[ALERTA] Subrepresentacion detectada: 34%</span>
+              </div>
+              <div class="terminal__line">
+                <span class="out">[INFO] Verificando trazabilidad de decisiones...</span>
+              </div>
+              <div class="terminal__line">
+                <span class="err">[ERROR] Modelo no es explicable en contexto legal</span>
+              </div>
+              <div class="terminal__line">
+                <span class="out">[INFO] Revisando politica de privacidad de datos...</span>
+              </div>
+              <div class="terminal__line">
+                <span class="warn">[ALERTA] Datos personales sin anonimizacion</span>
+              </div>
+              <div class="terminal__line">
+                <span class="out">[INFO] Comprobando mecanismo de apelacion humana...</span>
+              </div>
+              <div class="terminal__line">
+                <span class="err">[ERROR] No existe revision humana en casos criticos</span>
+              </div>
+              <div class="terminal__line" style="margin-top:0.75rem;">
+                <span class="out">Resultado: </span>
+                <span class="err">Sistema NO apto para despliegue. 4 problemas criticos.</span>
+              </div>
+              <div class="terminal__line">
+                <span class="ok">Ver guia de remediacion -> docs/etica.md</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MODULOS -->
+    <section id="modulos" class="modules-section" aria-labelledby="modulos-heading">
+      <div class="main-container">
+        <div class="section-label">Contenido del curso</div>
+        <h2 class="section-title" id="modulos-heading">Cuatro modulos educativos</h2>
+        <p class="section-intro">
+          Cada modulo aborda un area especifica de la responsabilidad tecnologica,
+          con contenido teorico, ejemplos practicos y recomendaciones concretas.
+        </p>
+
+        <div class="modules-grid">
+
+          <a href="pages/principios-eticos.html" class="module-card"
+             style="--module-color:#1a4fa3; --module-pale:#dce8ff;">
+            <div class="module-card__icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 2L3 7v5c0 5.5 3.8 10.7 9 12 5.2-1.3 9-6.5 9-12V7L12 2z"/>
+              </svg>
+            </div>
+            <div class="module-card__tag">Modulo 01</div>
+            <h3>Principios Eticos de la IA</h3>
+            <p>Los siete principios fundamentales que organismos internacionales han establecido para garantizar que la IA respete la dignidad humana y los derechos fundamentales.</p>
+            <div class="module-card__cta">
+              Leer modulo
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
+          </a>
+
+          <a href="pages/etica-informatica.html" class="module-card"
+             style="--module-color:#b45309; --module-pale:#fef3c7;">
+            <div class="module-card__icon" style="background:var(--color-amber-pale)">
+              <svg viewBox="0 0 24 24" aria-hidden="true" style="stroke:var(--color-amber)">
+                <rect x="2" y="3" width="20" height="14" rx="2"/>
+                <path d="M8 21h8M12 17v4"/>
+                <path d="M7 8l3 3-3 3"/>
+                <path d="M13 14h4"/>
+              </svg>
+            </div>
+            <div class="module-card__tag">Modulo 02</div>
+            <h3>Etica en Informatica</h3>
+            <p>Marco de responsabilidades del profesional informatico: desde la privacidad de datos hasta el impacto social del software, pasando por los dilemas del desarrollo con IA.</p>
+            <div class="module-card__cta" style="color:var(--color-amber)">
+              Leer modulo
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
+          </a>
+
+          <a href="pages/protocolos-correo.html" class="module-card"
+             style="--module-color:#166534; --module-pale:#dcfce7;">
+            <div class="module-card__icon" style="background:var(--color-green-pale)">
+              <svg viewBox="0 0 24 24" aria-hidden="true" style="stroke:var(--color-green)">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+            </div>
+            <div class="module-card__tag">Modulo 03</div>
+            <h3>Protocolos de Correo Electronico</h3>
+            <p>Normas de comunicacion profesional por correo, manejo seguro de informacion sensible, etiqueta digital y prevencion de vulnerabilidades en la bandeja de entrada.</p>
+            <div class="module-card__cta" style="color:var(--color-green)">
+              Leer modulo
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
+          </a>
+
+          <a href="pages/buenas-practicas-software.html" class="module-card"
+             style="--module-color:#6d28d9; --module-pale:#ede9fe;">
+            <div class="module-card__icon" style="background:#ede9fe">
+              <svg viewBox="0 0 24 24" aria-hidden="true" style="stroke:#6d28d9">
+                <polyline points="16 18 22 12 16 6"/>
+                <polyline points="8 6 2 12 8 18"/>
+              </svg>
+            </div>
+            <div class="module-card__tag">Modulo 04</div>
+            <h3>Buenas Practicas en Desarrollo de Software</h3>
+            <p>Estandares de calidad, seguridad y responsabilidad en el ciclo de vida del software: desde el diseno hasta el despliegue, con enfasis en sistemas que incorporan IA.</p>
+            <div class="module-card__cta" style="color:#6d28d9">
+              Leer modulo
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo" aria-label="Inicio">
+            <div class="nav-logo__mark">
+              <svg viewBox="0 0 20 20" aria-hidden="true" style="stroke:white">
+                <circle cx="10" cy="10" r="7" stroke-width="1.5" fill="none"/>
+                <path d="M10 6v4l3 2" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="nav-logo__text">
+              ConcienciaIA
+              <span>Educacion Responsable</span>
+            </div>
+          </a>
+          <p>Plataforma educativa sobre el uso responsable de la inteligencia artificial. Contenido de libre uso con fines academicos y de conciencia ciudadana.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Modulos</h5>
+          <ul>
+            <li><a href="pages/principios-eticos.html">Principios Eticos</a></li>
+            <li><a href="pages/etica-informatica.html">Etica Informatica</a></li>
+            <li><a href="pages/protocolos-correo.html">Protocolos de Correo</a></li>
+            <li><a href="pages/buenas-practicas-software.html">Desarrollo de Software</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Recursos externos</h5>
+          <ul>
+            <li><a href="https://www.ieee.org/about/corporate/governance/p7-ethics.html" target="_blank" rel="noopener">IEEE — Etica en IA</a></li>
+            <li><a href="https://www.acm.org/code-of-ethics" target="_blank" rel="noopener">ACM Codigo de Etica</a></li>
+            <li><a href="https://ainowInstitute.org" target="_blank" rel="noopener">AI Now Institute</a></li>
+            <li><a href="https://partnershiponai.org" target="_blank" rel="noopener">Partnership on AI</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Informacion</h5>
+          <ul>
+            <li><a href="index.html">Acerca del proyecto</a></li>
+            <li><a href="index.html#modulos">Todos los modulos</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>ConcienciaIA — Contenido educativo de libre uso</span>
+        <span>Sin derechos de autor — Libre distribucion con fines educativos</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

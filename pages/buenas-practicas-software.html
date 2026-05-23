@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buenas Practicas en Desarrollo de Software — ConcienciaIA</title>
+  <meta name="description" content="Estandares de calidad, seguridad y responsabilidad en el ciclo de vida del software: desde el diseno hasta el despliegue, con enfasis en sistemas que incorporan IA.">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+  <div id="progress-bar"></div>
+
+  <nav class="site-nav" role="navigation" aria-label="Navegacion principal">
+    <div class="nav-inner">
+      <a href="../index.html" class="nav-logo" aria-label="Inicio ConcienciaIA">
+        <div class="nav-logo__mark">
+          <svg viewBox="0 0 20 20" aria-hidden="true">
+            <circle cx="10" cy="10" r="7" stroke-width="1.5" fill="none" stroke="white"/>
+            <path d="M10 6v4l3 2" stroke-width="1.5" stroke-linecap="round" stroke="white" fill="none"/>
+          </svg>
+        </div>
+        <div class="nav-logo__text">ConcienciaIA<span>Educacion Responsable</span></div>
+      </a>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="principios-eticos.html">Principios Eticos</a></li>
+        <li><a href="etica-informatica.html">Etica Informatica</a></li>
+        <li><a href="protocolos-correo.html">Protocolos de Correo</a></li>
+        <li><a href="buenas-practicas-software.html" class="active">Desarrollo de Software</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main class="page-content">
+    <header class="page-hero">
+      <div class="page-hero__inner main-container">
+        <nav class="page-hero__breadcrumb" aria-label="Ruta de navegacion">
+          <a href="../index.html">Inicio</a>
+          <span class="sep">/</span>
+          <span>Desarrollo de Software</span>
+        </nav>
+        <span class="page-hero__label">Modulo 04</span>
+        <h1 class="page-hero__title">Buenas Practicas en Desarrollo de Software Moderno</h1>
+        <p class="page-hero__desc">
+          Escribir codigo que funcione no es suficiente. El software debe ser seguro,
+          mantenible, auditable y responsable. Estas practicas aplican especialmente
+          en sistemas que integran inteligencia artificial.
+        </p>
+      </div>
+    </header>
+
+    <div class="main-container">
+      <div class="page-layout">
+
+        <!-- CONTENIDO PRINCIPAL -->
+        <article>
+          <div class="article-meta">
+            <span class="article-meta__tag">Desarrollo</span>
+            <span class="article-meta__tag">Calidad</span>
+            <span class="article-meta__tag">Seguridad</span>
+            <span class="article-meta__read">Lectura estimada: 15 minutos</span>
+          </div>
+
+          <div class="prose">
+
+            <h2 id="mas-alla-del-codigo">Mas alla del codigo que funciona</h2>
+            <p>
+              En el desarrollo de software existe un error frecuente: confundir funcionalidad
+              con calidad. Un sistema puede ejecutarse sin errores visibles y aun asi ser
+              inseguro, inmantenible, discriminatorio o imposible de auditar. La calidad del
+              software es multidimensional, y en sistemas que afectan a personas reales, cada
+              dimension importa.
+            </p>
+            <p>
+              Con la adopcion creciente de componentes de inteligencia artificial en aplicaciones,
+              estas responsabilidades se han vuelto mas urgentes. Un modelo de ML integrado
+              en un sistema de contratacion, credito o diagnostico medico puede escalar el dano
+              de una mala practica de desarrollo a millones de decisiones por segundo.
+            </p>
+
+            <div class="callout callout--info">
+              <div class="callout__title">Contexto industria</div>
+              <p>Segun el informe CHAOS del Standish Group, solo el 31% de los proyectos de
+              software se entregan a tiempo, dentro del presupuesto y con todas las
+              funcionalidades planificadas. Las principales causas de fracaso son la falta
+              de requisitos claros, la deuda tecnica acumulada y la ausencia de pruebas
+              sistematicas — los tres pilares que abordan las buenas practicas de este modulo.</p>
+            </div>
+
+            <h2 id="ciclo-de-vida">Ciclo de vida del software sostenible</h2>
+            <p>
+              El ciclo de vida del desarrollo de software (SDLC) describe las fases por las
+              que pasa un sistema desde su concepcion hasta su desmantelamiento. Las buenas
+              practicas no son solo tecnicas: son decisiones eticas que se toman en cada
+              fase del ciclo.
+            </p>
+
+          </div>
+
+          <!-- TIMELINE DEL CICLO -->
+          <div class="timeline" style="margin: 2rem 0 3rem;">
+            <div class="timeline-item">
+              <div class="timeline-item__date">Fase 01</div>
+              <h4>Requisitos y diseno</h4>
+              <p>Definir quienes seran los usuarios del sistema y que impacto tendra en ellos.
+                Incluir requisitos de privacidad, accesibilidad y equidad desde el principio.
+                Un requisito de privacidad anadido al final cuesta diez veces mas que uno
+                integrado desde el diseno.</p>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-item__date">Fase 02</div>
+              <h4>Desarrollo y pruebas</h4>
+              <p>Escribir codigo limpio, documentado y con cobertura de pruebas automatizadas.
+                Las pruebas no son un paso opcional: son la garantia de que el sistema hace
+                lo que dice hacer, y de que los cambios futuros no rompen comportamientos criticos.</p>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-item__date">Fase 03</div>
+              <h4>Revision y auditoria</h4>
+              <p>Realizar revisiones de codigo cruzadas (code review) antes de integrar cambios.
+                En sistemas con IA, incluir revisiones especificas de sesgo, equidad y explicabilidad
+                como parte del proceso de integracion, no como paso separado.</p>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-item__date">Fase 04</div>
+              <h4>Despliegue responsable</h4>
+              <p>Usar despliegues graduales (canary releases, feature flags) para limitar el impacto
+                de errores imprevistos. Documentar las limitaciones conocidas del sistema antes del
+                lanzamiento, no despues de que se detecten en produccion.</p>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-item__date">Fase 05</div>
+              <h4>Monitorizacion y mantenimiento</h4>
+              <p>Un sistema en produccion es un sistema vivo. Monitorizar metricas de comportamiento,
+                errores y equidad. En sistemas de IA, vigilar el data drift (cambios en la distribucion
+                de datos de entrada) que puede degradar el rendimiento y la equidad del modelo.</p>
+            </div>
+          </div>
+
+          <div class="prose">
+
+            <h2 id="testing">Pruebas automatizadas: el contrato de calidad</h2>
+            <p>
+              Las pruebas automatizadas son la unica garantia sostenible de que el software
+              se comporta como se espera. A medida que los sistemas crecen, la verificacion
+              manual se vuelve imposible: incluso una persona dedicada no puede probar
+              manualmente todas las combinaciones posibles de una aplicacion medianamente compleja.
+            </p>
+
+            <h3>Piramide de pruebas</h3>
+
+          </div>
+
+          <div class="cards-grid cards-grid--3" style="margin: 1.5rem 0 2.5rem;">
+            <div class="card">
+              <div class="card__tag card__tag--green">Base</div>
+              <h3>Pruebas unitarias</h3>
+              <p>Verifican que cada funcion o componente individual funciona correctamente de
+                forma aislada. Son rapidas, baratas y deben ser la mayoria del conjunto de pruebas.
+                En sistemas con IA, las pruebas unitarias validan las transformaciones de datos
+                y los componentes de pre-procesamiento.</p>
+            </div>
+            <div class="card">
+              <div class="card__tag card__tag--blue">Centro</div>
+              <h3>Pruebas de integracion</h3>
+              <p>Verifican que los componentes funcionan correctamente cuando se combinan.
+                Son especialmente importantes cuando se integran modelos de IA con sistemas
+                existentes: el modelo puede ser correcto de forma aislada pero fallar
+                al interactuar con datos reales del sistema.</p>
+            </div>
+            <div class="card">
+              <div class="card__tag card__tag--amber">Punta</div>
+              <h3>Pruebas de extremo a extremo</h3>
+              <p>Verifican flujos completos del usuario, desde la entrada hasta el resultado final.
+                Son lentas y costosas, pero esenciales para validar que el sistema funciona
+                correctamente en condiciones reales. En sistemas criticos, incluir pruebas
+                de escenarios de fallo y casos limite.</p>
+            </div>
+          </div>
+
+          <div class="prose">
+
+            <h2 id="control-versiones">Control de versiones responsable</h2>
+            <p>
+              El control de versiones con Git no es solo una herramienta de colaboracion:
+              es un registro auditables de cada decision tecnica tomada en el proyecto.
+              Un historial de commits bien estructurado permite entender por que se tomo
+              cada decision, identificar cuando se introdujo un bug y revertir cambios
+              daninos de forma segura.
+            </p>
+
+            <h3>Practicas de commits eticas</h3>
+
+          </div>
+
+          <div class="compare-grid">
+            <div class="compare-col compare-col--bad">
+              <div class="compare-col__header">Commits problematicos</div>
+              <div class="compare-col__body">
+                <code>fix stuff
+update
+wip
+asdfgh
+final version 2 REAL
+changes</code>
+                <p style="margin-top: 1rem;">No explican que cambio, por que ni que impacto tiene. Hacen imposible auditar el historial.</p>
+              </div>
+            </div>
+            <div class="compare-col compare-col--good">
+              <div class="compare-col__header">Commits responsables</div>
+              <div class="compare-col__body">
+                <code>feat: add bias audit step to training pipeline
+
+Adds automated fairness metrics (equalized odds,
+demographic parity) before model serialization.
+Relates to #234 - AI ethics compliance.</code>
+                <p style="margin-top: 1rem;">Describe el que, el por que y vincula al contexto. Habilita auditorias futuras.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="prose">
+
+            <h2 id="seguridad">Seguridad como practica, no como capa</h2>
+            <p>
+              La seguridad del software no es un modulo que se instala al final del desarrollo:
+              es una propiedad que debe diseñarse desde el primer dia. El enfoque DevSecOps
+              integra la seguridad en cada fase del ciclo de vida, desde el diseno de
+              arquitectura hasta el pipeline de despliegue automatico.
+            </p>
+            <p>
+              En sistemas con IA, la superficie de ataque se amplia: los modelos pueden ser
+              vulnerables a ataques de envenenamiento de datos (data poisoning), ataques
+              adversariales que engañan al modelo con entradas cuidadosamente diseñadas,
+              y extraccion de informacion del modelo mediante consultas repetidas (model inversion).
+            </p>
+
+            <h3 id="deuda-tecnica">La deuda tecnica como cuestion etica</h3>
+            <p>
+              La deuda tecnica es el coste futuro de las soluciones rapidas tomadas en el
+              presente. En si misma no es un problema: todos los proyectos acumulan alguna
+              deuda tecnica. El problema etico surge cuando la deuda se acumula de forma
+              irresponsable, se oculta a los clientes o se traslada a sistemas criticos.
+            </p>
+
+            <div class="callout callout--warning">
+              <div class="callout__title">Para tener en cuenta</div>
+              <p>Un sistema de IA desplegado sobre una base de codigo con alta deuda tecnica
+              es especialmente peligroso: los parches de urgencia pueden alterar el comportamiento
+              del modelo de formas inesperadas, y la falta de documentacion hace imposible
+              auditar retroactivamente que ocurrio si el sistema produce un resultado danino.</p>
+            </div>
+
+            <h2 id="documentacion">Documentacion como acto de responsabilidad</h2>
+            <p>
+              La documentacion tecnica no es un lujo ni una actividad que se pospone para
+              cuando "haya tiempo". Es la unica forma de garantizar que el conocimiento sobre
+              un sistema sobrevive a la rotacion de equipo, que los nuevos integrantes pueden
+              contribuir sin introducir regresionces y que los auditores externos pueden
+              verificar el comportamiento del sistema.
+            </p>
+            <p>
+              En sistemas con IA, la documentacion debe incluir obligatoriamente: los datos
+              de entrenamiento utilizados y sus limitaciones conocidas, las metricas de
+              rendimiento y equidad evaluadas, las condiciones de uso apropiadas e inapropiadas
+              del modelo, y los procedimientos de monitorizacion y reentrenamiento.
+            </p>
+
+            <blockquote>
+              <p>
+                "El codigo sin documentar es un sistema que solo un humano puede mantener,
+                y ese humano eres tu en seis meses, cuando ya no recuerdas por que lo escribiste asi."
+              </p>
+            </blockquote>
+
+            <h2 id="ia-responsable">Integracion responsable de IA en el desarrollo</h2>
+            <p>
+              Las herramientas de IA generativa para programacion (GitHub Copilot, Claude,
+              ChatGPT) han cambiado la productividad del desarrollo. Pero su uso responsable
+              requiere conciencia de sus limitaciones: generan codigo que puede ser
+              funcionalmente correcto pero inseguro, sesgado o que viola licencias de software libre.
+            </p>
+
+          </div>
+
+          <ul class="checklist" style="margin: 1.5rem 0 2.5rem;">
+            <li>Revisar siempre el codigo generado por IA como si fuera de un desarrollador junior: nunca desplegarlo sin revision critica.</li>
+            <li>Verificar la licencia del codigo sugerido cuando se trabaja en proyectos comerciales o con restricciones de uso.</li>
+            <li>No incluir datos sensibles, credenciales o informacion de clientes en los prompts enviados a herramientas de IA en la nube.</li>
+            <li>Usar las herramientas de IA para acelerar el desarrollo, no para saltarse la comprension: entender el codigo generado antes de integrarlo.</li>
+            <li>Documentar cuando se ha usado IA generativa en la generacion de componentes criticos, para facilitar futuras auditorias.</li>
+            <li>Mantener pruebas automatizadas que detecten comportamientos inesperados introducidos por cambios basados en sugerencias de IA.</li>
+          </ul>
+
+          <div class="prose">
+
+            <div class="callout callout--success">
+              <div class="callout__title">Buena practica final</div>
+              <p>El desarrollo de software etico no es mas lento: a largo plazo es mas rapido.
+              Los sistemas con buenas pruebas, documentacion clara y seguridad integrada
+              requieren menos tiempo de depuracion, generan menos incidentes criticos y
+              son mas faciles de auditar cuando se requiere. La etica es un activo, no un coste.</p>
+            </div>
+
+          </div>
+        </article>
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar" aria-label="Navegacion del modulo">
+          <nav class="sidebar-toc" aria-label="Contenido de este modulo">
+            <div class="sidebar-toc__title">En esta pagina</div>
+            <ol>
+              <li><a href="#mas-alla-del-codigo">Mas alla del codigo</a></li>
+              <li><a href="#ciclo-de-vida">Ciclo de vida</a></li>
+              <li><a href="#testing">Pruebas automatizadas</a></li>
+              <li><a href="#control-versiones">Control de versiones</a></li>
+              <li><a href="#seguridad">Seguridad</a></li>
+              <li><a href="#deuda-tecnica">Deuda tecnica</a></li>
+              <li><a href="#documentacion">Documentacion</a></li>
+              <li><a href="#ia-responsable">IA en el desarrollo</a></li>
+            </ol>
+          </nav>
+          <nav class="sidebar-nav" aria-label="Otros modulos">
+            <div class="sidebar-nav__title">Modulos del curso</div>
+            <ul>
+              <li><a href="principios-eticos.html">Principios Eticos</a></li>
+              <li><a href="etica-informatica.html">Etica Informatica</a></li>
+              <li><a href="protocolos-correo.html">Protocolos de Correo</a></li>
+              <li><a href="buenas-practicas-software.html" class="current">Desarrollo de Software</a></li>
+            </ul>
+          </nav>
+        </aside>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="nav-logo" aria-label="Inicio">
+            <div class="nav-logo__mark">
+              <svg viewBox="0 0 20 20" aria-hidden="true">
+                <circle cx="10" cy="10" r="7" stroke-width="1.5" fill="none" stroke="white"/>
+                <path d="M10 6v4l3 2" stroke-width="1.5" stroke-linecap="round" stroke="white" fill="none"/>
+              </svg>
+            </div>
+            <div class="nav-logo__text">ConcienciaIA<span>Educacion Responsable</span></div>
+          </a>
+          <p>Plataforma educativa sobre el uso responsable de la inteligencia artificial. Contenido de libre uso con fines academicos.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Modulos</h5>
+          <ul>
+            <li><a href="principios-eticos.html">Principios Eticos</a></li>
+            <li><a href="etica-informatica.html">Etica Informatica</a></li>
+            <li><a href="protocolos-correo.html">Protocolos de Correo</a></li>
+            <li><a href="buenas-practicas-software.html">Desarrollo de Software</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Recursos</h5>
+          <ul>
+            <li><a href="https://www.acm.org/code-of-ethics" target="_blank" rel="noopener">ACM Codigo de Etica</a></li>
+            <li><a href="https://www.ieee.org/about/corporate/governance/p7-ethics.html" target="_blank" rel="noopener">IEEE Etica en IA</a></li>
+            <li><a href="https://partnershiponai.org" target="_blank" rel="noopener">Partnership on AI</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Navegacion</h5>
+          <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../index.html#modulos">Todos los modulos</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>ConcienciaIA — Contenido educativo de libre uso</span>
+        <span>Sin derechos de autor — Libre distribucion con fines educativos</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
